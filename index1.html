@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Survey form
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+   </head>
+
+    <body>
+	<h1> Wastage Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				<font size="+2">
+                Carbon Save Tech </font>
+			</label>
+            
+
+			<!-- Input Type Text -->
+			
+		</div>
+        
+        <div class="form-control">
+			<label for="role" id="label-role">
+				(i) Compost
+			</label>
+            <div class="form-control">
+    
+                <!-- Input Type Radio Button -->
+                <label for="recommed-1">
+                    <input type="radio"
+                        id="recommed-1"
+                        name="recommed"> (a) Home Compost</input> 
+                        	<!-- Dropdown options -->
+			  <div>
+              <select name="role" id="role">
+                  <option value="0. Choose one"> Choose one</option>
+				<option value=" 1. Urbnster "> 1. Urbnster </option>
+				<option value=" 2. Self Composting"> 2. Self Composting</option>
+				<option value=" 3. Other Composter">
+					 3. Other Composter
+				</option>
+				
+			 </select> </div>
+
+		
+
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                        id="recommed-2"
+                        name="recommed"> (b) Garden Compost</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                        id="recommed-3"
+                        name="recommed"> (c) Field Compost</input>
+                </label>
+            </div>
+        </div>
+        
+    
+			
+		
+		<div class="form-control">
+			<label for="Biogas" id="label-Biogas">
+				(ii) Biogas
+			</label>
+
+			
+            <div>
+                <select name="role" id="role">
+                    <option value=" 1. Urbnster "> Choose one </option>
+                  <option value=" 2. Urbnster "> 1. Household Waste </option>
+                  <option value=" 3. Self Composting"> 2. Cattle dung Waste</option>
+                  <option value=" 4. Other Composter">
+                       3. Hotel Waste
+                  </option>
+                  
+               </select> </div>
+		</div>
+    
+		<div class="form-control">
+			<label for="age" id="label-age">
+				(iii) Daily Upgrade Waste Quantity:
+			</label>
+
+            <div>
+                <select name="role" id="role">
+                    <option value="0. Choose one"> Choose one</option>
+                  <option value=" 1. Urbnster "> 1. 0-2 kg </option>
+                  <option value=" 2. Self Composting"> 2. 2-10 kg</option>
+                  <option value=" 3. Other Composter">
+                       3. 10-25 kg
+                  </option> <option value=" 4. Other Composter">
+                    4. 25-100 kg
+               </option>
+                  
+               </select> </div>
+
+			
+
+		
+
+		<div class="form-control">
+			<label for="avatar">
+				(iv) Carbon save till now:
+			</label>
+
+            <input type="file"
+                id="avatar" name="avartar"
+                accept="image/png,imagejpeg">
+            
+            <input type="file"
+                id="avatar" name="avartar"
+                accept="image/png,imagejpeg">
+                <p>
+                    i. Amount of Watste <hr>
+                    ii. Compost monthly production <hr>
+                    iii. Biogas monthly production  
+                                </p>
+
+        </div>
+
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+        
+            <a href="ss.html">
+				<input type="submit"/></a>
+			
+         
+         
+	</form>
+</body>
+
+</html>
